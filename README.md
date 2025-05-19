@@ -1,7 +1,7 @@
 # aws-selenium-security-automation
 
 ## To Do:
-- [x]Actually implement the Security Manager into the code
+- [x] Actually implement the Security Manager into the code
 - Look more into the security aspect (eg. restrict ssh ips)
 - set up pi proxy asap - try to get whole project complete this week
 - maybe include a page for random security notes, like in trying to use a vpn i somewhat learned about pgp keys (like at least how to use mullvad's pgp keys)
