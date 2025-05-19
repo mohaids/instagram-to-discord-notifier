@@ -1,12 +1,14 @@
 # aws-selenium-security-automation
 
 ## To Do:
-- Actually implement the Security Manager into the code
+- [X]Actually implement the Security Manager into the code
 - Look more into the security aspect (eg. restrict ssh ips)
 - set up pi proxy asap - try to get whole project complete this week
 - maybe include a page for random security notes, like in trying to use a vpn i somewhat learned about pgp keys (like at least how to use mullvad's pgp keys)
     - so the task would be to: flesh out knowledge and create a docs for it
+    - another topic could be: vncserver
 - get help from online communities for diagram improvement
+- learn terraform and aws alternative (cloud formation) to try to spin up vms from code - is it possible to even load python scripts into these instances via these IaC
 
 ## Project Purpose
 To provide a discrete and customizable method to recieve Instagram notifications via Discord.
