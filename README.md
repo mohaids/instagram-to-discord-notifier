@@ -6,6 +6,7 @@
     - [ ] finish (mullvad) gpg by today
 - Look more into the security aspect (eg. restrict ssh ips)
 - set up pi proxy asap - try to get whole project complete this week
+- for best practice, note that the python script should use venvs to separate packages
 - maybe include a page for random security notes, like in trying to use a vpn i somewhat learned about pgp keys (like at least how to use mullvad's pgp keys)
     - so the task would be to: flesh out knowledge and create a docs for it
     - another topic could be: vncserver
