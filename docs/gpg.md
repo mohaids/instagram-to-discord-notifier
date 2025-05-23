@@ -24,7 +24,8 @@ wget https://mullvad.net/media/mullvad-code-signing.asc
 gpg --import mullvad-code-signing.asc
 ```
 
-```output
+Output:
+```text
 gpg: key D5A1D4F266DE8DDF: public key "Mullvad (code signing) <admin@mullvad.net>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
@@ -37,15 +38,16 @@ gpg:               imported: 1
 gpg --fingerprint admin@mullvad.net
 ```
 
-```text
-where did "admin@mullvad.net" come from - this information is contained in the gpg key
+Q/A: where did "admin@mullvad.net" come from?
+Answer: this information is contained in the gpg key
 
-for general case: when importing key into keyring, look at the output (step 2) - this is where the email will be
-```
+For general case: when importing key into keyring, look at the output (step 2) - this is where the email will be
+
 
 Compare the output of the above command to the fingerprint reported by Mullvad on their [site](https://mullvad.net/en/help/verifying-signatures)
 
-```output
+Output:
+```text
 truncated output: 
 pub   rsa4096 2016-10-27 [SC]
       A119 8702 FC3E 0A09 A9AE  5B75 D5A1 D4F2 66DE 8DDF
