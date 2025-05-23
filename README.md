@@ -2,6 +2,8 @@
 
 ## To Do:
 - [x] Actually implement the Security Manager into the code
+- [ ] Actually implement **cloud security tools** into the project
+    - [ ] AWS CloudTrail, Azure Security Center
 - Work on the docs files
     - [ ] finish (mullvad) gpg by today
 - Look more into the security aspect (eg. restrict ssh ips)
@@ -23,7 +25,7 @@ Run a Selenium script on an Ubuntu EC2 instance which I interact with via GUI th
 ![Architecture Diagram](resources/readme-architecture-design.png)
 
 ### Security Considerations:
-1. AWS Security Manager
+1. AWS Secrets Manager
 2. 
 
 ## Technologies

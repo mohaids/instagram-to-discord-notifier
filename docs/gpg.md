@@ -19,17 +19,36 @@ Definition: GPG is short for GNU Privacy Guard - a method to securely verify tha
 wget https://mullvad.net/media/mullvad-code-signing.asc
 ```
 
-**Step 2:** Verifying the key is authentic (meaning the fingerprint of the GPG equals the fingerprint that Mullvad provides on their website)
+**Step 2:** Add the key to your keyring
+```shell
+gpg --import mullvad-code-signing.asc
+```
+
+```output
+gpg: key D5A1D4F266DE8DDF: public key "Mullvad (code signing) <admin@mullvad.net>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+```
+
+
+**Step 3:** Verifying the key is authentic (meaning the fingerprint of the GPG equals the fingerprint that Mullvad provides on their website)
 
 ```shell
 gpg --fingerprint admin@mullvad.net
 ```
 
+```text
+where did "admin@mullvad.net" come from - this information is contained in the gpg key
+
+for general case: when importing key into keyring, look at the output (step 2) - this is where the email will be
+```
+
 Compare the output of the above command to the fingerprint reported by Mullvad on their [site](https://mullvad.net/en/help/verifying-signatures)
 
-**Step 3:** Add the key to your keyring
-```shell
-gpg --import mullvad-code-signing.asc
+```output
+truncated output: 
+pub   rsa4096 2016-10-27 [SC]
+      A119 8702 FC3E 0A09 A9AE  5B75 D5A1 D4F2 66DE 8DDF
 ```
 
 **Step 4:** Download the actual Mullvad VPN software
@@ -42,14 +61,19 @@ wget --trust-server-names https://mullvad.net/download/app/deb/latest
 wget --trust-server-names https://mullvad.net/download/app/deb/latest/signature
 ```
 
-**Step 6:** ???
+**Step 6:** Verify the software's signature
 ```shell
 gpg --verify MullvadVPN-*.deb.asc
 ```
+
+**Questions:** why aren't we checking the software's file as well? like why just the signature? 
 
 If the output returns the following, it's confirmed to be authentic:
 ```output
 gpg: Good signature from "Mullvad (code signing) <admin@mullvad.net>" [full]
 ```
 
-**Step 7:** Open the 
+**Step 7:** Open the package 😊🚀
+```shell
+sudo dpkg -i MullvadVPN-*.deb
+```
