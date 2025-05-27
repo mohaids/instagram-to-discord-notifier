@@ -1,6 +1,7 @@
 # aws-selenium-security-automation
 
 ## To Do:
+- [ ] remember to secure proxy server 😩
 - [x] Actually implement the Security Manager into the code
 - [ ] Actually implement **cloud security tools** into the project
     - [ ] AWS CloudTrail, Azure Security Center
