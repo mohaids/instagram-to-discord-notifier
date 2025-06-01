@@ -16,4 +16,3 @@ then the server probably captures those packets
 
 and views them via the Server
 
- 
