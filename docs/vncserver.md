@@ -109,7 +109,9 @@ visit this link: https://docs.aws.amazon.com/cli/latest/userguide/getting-starte
 
 the easiest option is snap package since its less hassle.
 
-after installation, make sure to authenticate with an IAM user with only the necessary priviledges
+**note to self**: try to use gpg keys just to see if knowledge is up to date
+
+after installation, make sure to authenticate with an IAM user with only the necessary priviledges, which is essentially just being able to access secrets from the Secrets Manager
 
 **note to self**: add a requirements.txt file for the required package installations for the python script(s)
 
