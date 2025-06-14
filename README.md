@@ -2,7 +2,10 @@
 
 ## To Do:
 
+CURRENT ISSUE: not sure why start.sh being run by terraform wont load the script to the instance.
+
 ALSO VERY INTERESTING DEVELOPMENT: when i use a more powerful VM i don't get restricted by services???
+
 - unrelated topic, but might as well use the pi as a pihole and block reddit traffic from a specific ip
 **questions**:
 - [ ] can you programmatically load secrets into the secrets manager
