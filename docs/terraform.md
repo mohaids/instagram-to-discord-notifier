@@ -10,6 +10,8 @@
 Specify the specific privileges of the IAM user you're using
 
 ## Terraform Commands
+`terraform init`: 
+
 `terraform validate` (optional): checks to make sure terraform syntax is correct
 
 `terraform plan` (optional): checks to see what changes will happen
