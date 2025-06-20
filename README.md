@@ -20,6 +20,9 @@ ALSO VERY INTERESTING DEVELOPMENT: when i use a more powerful VM i don't get res
 - just for practice using gpg keys to install aws cli
 - [ ] thoughts on getting a case for the pi and cooling stuff to have it always running - for the pi hole and the proxy
 
+6.19 was working on the privacy browser, sue me
+
+
 - [ ] remember to secure proxy server 😩
 - [x] Actually implement the Security Manager into the code
 - [ ] Actually implement **cloud security tools** into the project
