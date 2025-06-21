@@ -22,6 +22,8 @@ ALSO VERY INTERESTING DEVELOPMENT: when i use a more powerful VM i don't get res
 
 6.19 was working on the privacy browser, sue me
 
+6.20 worked on the bigger picture of the project and identifying scope creeps
+
 
 - [ ] remember to secure proxy server 😩
 - [x] Actually implement the Security Manager into the code
