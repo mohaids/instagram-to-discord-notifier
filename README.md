@@ -13,25 +13,28 @@ With the project you can:
 2. And you are able to customize the notification of that notification you get
 
 Here's an example of what the customized notifications could look like:
+
 ![Discord Notification Image](resources/readme-discord-notification.png)
 
 ## Project Overview:
-Run a Selenium script on an Ubuntu EC2 instance which I interact with via GUI thru RealVNC Viewer and which connects to my Raspberry Pi 4B proxy server in order to continuously monitor the Instagram DMs page and call my Discord webhook when I receive a new DM.
+Run a Selenium script on an Ubuntu EC2 instance which I interact with via GUI thru RealVNC Viewer ~~and which connects to my Raspberry Pi 4B proxy server~~ in order to continuously monitor the Instagram DMs page and call my Discord webhook when I receive a new DM.
 
 ## Architecture & Security Design
 ![Architecture Diagram](resources/readme-architecture-design.png)
 
 ### Security Considerations:
 1. AWS Secrets Manager
-2. 
+2. Limited IAM User permissions
+    - for accessing AWS Secrets Manager
 
-## Technologies
-- AWS EC2 (Ubuntu) (or AWS Linux???)
-- Selenium WebDriver
+## Technologies Used
+- AWS EC2 (Ubuntu) ~~(or AWS Linux???)~~
+- AWS Secrets Manager
+- AWS Identity and Access Management (IAM)
+- AWS CLI
+- Python (Selenium)
 - RealVNC Viewer
-- Raspberry Pi 4B
-- Discord Webhooks
-- Python
+- Discord (Webhooks)
 
 
 ## Setup Instructions
