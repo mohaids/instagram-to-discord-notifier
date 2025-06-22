@@ -6,8 +6,15 @@
 | File | Description |
 |------|-------------|
 |**discord-setup.md** | |
-|
-|**aws_cloudformation.md** | Details how to provision and deploy an EC2 instance via AWS's CloudFormation tool |
+|**aws-console-manager.md** | |
+|**mandatory-manual.md** | |
+
+The following files are currently on hold due to scope creep:
+| File | Description |
+|**aws-cloudformation.md** | Details how to provision and deploy an EC2 instance via AWS's CloudFormation tool |
+|**terraform.md** | Same as above, but instead of using AWSCloudFormation tool, it uses - as the name suggests - Terraform|
+|**raspberry-pi.md** | Initially created this file due to being under the assumption that a proxy was necessary for this project|
+|**vncserver-explained.md** | Not yet created|
 
 
 ## Using this Documentation
