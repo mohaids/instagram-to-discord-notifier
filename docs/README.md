@@ -29,9 +29,9 @@ The following files are currently on hold due to scope creep:
 3. Currently - choose the manual route to set up your VM. ~~Now you have a choice between these 3 options for setting up the VM~~:
     1. GUI (Manual)
         - [AWS Console Manager](aws-console-manager.md)
-    2. Terminal (temporarly on hold due to scope creep)
-        - [AWS CloudFormation]()
-        - [Terraform]()
+    2. ~~Terminal~~ (temporarly on hold due to scope creep)
+        - [AWS CloudFormation]
+        - [Terraform]
 
 4. Add the python file ("files", if using AWS Secrets Manager) to your VM
     1. Using AWS Secrets Manager (preferred)
