@@ -8,8 +8,10 @@ Let's say you didn't want to get these pesky Instagram notifications:
 
 ![Example Notification Image](resources/readme-notifications-image.png)
 
-With the project you can: 
-1. Get a notification of that notification via a familiar (read: better) interface : Discord
+But you STILL want to know when someone DMs you.
+
+With this project you can: 
+1. Get a notification of that notification via a familiar (read: better) interface: Discord
 2. And you are able to customize the notification of that notification you get
 
 Here's an example of what the customized notifications could look like:
@@ -39,17 +41,9 @@ Run a Selenium script on an Ubuntu EC2 instance which I interact with via GUI th
 
 ## Setup Instructions
 
-### Manual Provisioning:
-1. **EC2 Instance Setup**
-Include steps here:
+1. Manual Provisioning: Follow the [docs/readme.md](docs/README.md) file for detailed instructions.
 
-If you would rather provision your instance via IaC tools, here are their respective steps:
-- [Provisioning via AWS CloudFormation](docs/aws_cloudformation.md)
-- [Provisioning via Terraform](docs/terraform.md)
-
-### Raspberry Pi Proxy Setup
-Follow the [Raspberry Pi proxy guide](docs/raspberry-pi-proxy.md)
-
+Currently, doing this project via IaC tools is on hold due to scope creep.
 
 
 ## Future Security Enhancements
