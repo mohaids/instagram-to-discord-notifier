@@ -38,14 +38,11 @@ The following files are currently on hold due to scope creep:
         - Add [attach.py](attach.py)
         - Add [secret_load.py](secret_load.py)
     2. NOT using AWS Secrets Manager
-        - Add [without-aws.py](without-aws.py)
+        - Add [without-aws.py](../src/without-aws.py)
     
-    create a venv, then run [requirements.txt](requirements.txt) to install necessary packages to run the python script:
+    create a venv, then run [requirements.txt](../src/requirements.txt) to install necessary packages to run the python script:
 
-    ```bash
-    # insert specific command here
-    pip install -r requirements.txt
-    ```
+    
 
 
 ~~for the other methods, just include the programmatic version in those files.~~

@@ -85,28 +85,6 @@ Now you should successfully have access to your machine via GUI!
 ---
 When in GUI, open terminal, and run the following command to install chrome
 
-### Temp Instructions:
-Launch chrome tab via: 
-
-```bash
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-```
-
-```bash
-sudo apt install ./google-chrome-stable_current_amd64.deb -y
-```
-
-```bash
-google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-debug
-```
-
-Then run attach.py script:
-
-activate the venv:
-```bash
-source [name]/bin/activate
-```
-
 before running the script:
 you must ensure that aws cli is installed
 
@@ -117,10 +95,3 @@ the easiest option is snap package since its less hassle.
 **note to self**: try to use gpg keys just to see if knowledge is up to date
 
 after installation, make sure to authenticate with an IAM user with only the necessary priviledges, which is essentially just being able to access secrets from the Secrets Manager
-
-**note to self**: add a requirements.txt file for the required package installations for the python script(s)
-
-run the script:
-```bash
-python3 attach.py
-```
