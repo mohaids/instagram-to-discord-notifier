@@ -18,7 +18,7 @@ Now you should be in the EC2 page, locate the "Launch instance" button and click
 
 ![EC2 - Launch Instance](/resources/edited-console-pics/2edited-ec2-home.png)
 
-Now name your instance something memorable - I've named it the 'oh so descriptive', "instagram monitor".
+Now name your instance something memorable - I've named it the oh-so-descriptive "instagram monitor".
 
 ![Name](/resources/edited-console-pics/3edited-1st-config-page.png)
 

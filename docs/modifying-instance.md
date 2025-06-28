@@ -1,11 +1,12 @@
-### To set up the VM:
+# Once SSH'd into the VM:
+
 Install the necessary packages:
 ```bash
 sudo apt update
 sudo apt install -y xfce4 xfce4-goodies tigervnc-standalone-server dbus-x11 xterm x11-xserver-utils
 ```
 
-Set Up vncserver
+#### Set Up vncserver
 
 First on your personal machine (not the instance), install [RealVNC Viewer](https://www.realvnc.com/en/connect/download/viewer/windows/?lai_vid=VVzDK0Pe0iV4&lai_sr=0-4&lai_sl=l&lai_p=1&lai_na=921110)
 
@@ -17,6 +18,8 @@ vncserver
 
 You will be required to create a password here. Enter it, and confirm it.
 
+When asked "Would you like to enter a view-only password (y/n)?", enter 'n'.
+
 Kill default session:
 ```bash
 vncserver -kill :1
@@ -27,7 +30,7 @@ Edit start up file:
 nano ~/.vnc/xstartup
 ```
 
-Replace contents with these lines:
+Replace the existing contents with these lines, save + exit:
 ```text
 #!/bin/bash
 unset SESSION_MANAGER
@@ -67,18 +70,30 @@ Replace "<ec-ip-address>", with your EC2's Public IP address.
 ssh -L 5901:localhost:5901 -i key.pem ubuntu@<ec-ip-address>
 ```
 
+Open RealVNC Viewer on your personal machine, and if you already don't have localhost:5901 as an option, enter it in the search bar to make it such.
+
+Now it'll warn you about "Unencrypted connection"
+
+> explain why this is fine
+
+Click "Continue"
+
+Now it'll prompt you to "Authenticate to VNC Server" - use the password you created from earlier to authenticate.
+
+Now you should successfully have access to your machine via GUI!
+
 ---
 When in GUI, open terminal, and run the following command to install chrome
-
-```bash
-sudo apt install ./google-chrome-stable_current_amd64.deb -y
-```
 
 ### Temp Instructions:
 Launch chrome tab via: 
 
 ```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+```
+
+```bash
+sudo apt install ./google-chrome-stable_current_amd64.deb -y
 ```
 
 ```bash

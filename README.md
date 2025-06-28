@@ -2,7 +2,7 @@
 
 
 ## Project Purpose
-To provide a discrete and customizable method to recieve desktop Instagram notifications via Discord.
+To provide a discrete and customizable method to receive desktop Instagram notifications via Discord.
 
 Let's say you didn't want to get these pesky Instagram notifications:
 
