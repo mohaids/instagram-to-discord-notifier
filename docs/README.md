@@ -6,9 +6,9 @@
 | File | Description |
 |------|-------------|
 |**[discord-setup.md](discord-setup.md)** | To demonstrate how to set up a private discord server to get the notifications at|
-|**aws-console-manager.md** | Shows how to provision the EC2 instance|
-|**modifying-instance.md** | Necessary commands to run on the instance in order for this project to function|
-|**mandatory-manual.md** |Final mandatory manual steps to take in order to set up the environment for Selenium to work|
+|**[aws-console-manager.md](aws-console-manager.md)** | Shows how to provision the EC2 instance|
+|**[modifying-instance.md](modifying-instance.md)** | Necessary commands to run on the instance in order for to allow GUI access|
+|**[mandatory-manual.md](mandatory-manual.md)** |Final mandatory manual steps (while in GUI) to take in order to set up the environment for Selenium to work|
 
 The following files are currently on hold due to scope creep:
 
@@ -24,7 +24,7 @@ The following files are currently on hold due to scope creep:
 
 1. Review with the main README.md file in the project's root for a high level overview of the project
 
-2. Set up your private Discord Server & capturing the webhook in your AWS Secrets Manager by following [these instructions](discord-setup.md)
+2. Set up your private Discord Server & capturing the webhook in your AWS Secrets Manager by following [discord-setup.md](discord-setup.md)
 
 3. Currently - choose the manual route to set up your VM. ~~Now you have a choice between these 3 options for setting up the VM~~:
     1. GUI (Manual)
@@ -35,6 +35,8 @@ The following files are currently on hold due to scope creep:
 
 4. Follow [modifying-instance.md](modifying-instance.md) to enable the instance to have GUI access 🖥️.
 
-5. If successful, you should now have GUI access to your machine 🥳🎉, and now should follow the [mandatory manual instructions](mandatory-manual.md) to add the python file(s) and do the final leg of the setup. Just to reiterate, this part is 'necessary' to by-pass Instagram's restrictions on Selenium.
+5. If successful, you should now have GUI access to your machine 🥳🎉
+
+Now should follow the [mandatory manual instructions](mandatory-manual.md) to add the python file(s) and do the final leg of the setup. Just to reiterate, this part is 'necessary' to by-pass Instagram's restrictions on Selenium.
 
 ~~for the other methods, just include the programmatic version in those files.~~
