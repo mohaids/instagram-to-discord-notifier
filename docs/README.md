@@ -22,7 +22,7 @@ The following files are currently on hold due to scope creep:
 
 ## Using this Documentation
 
-1. Start with the main README.md file in the project's root for a high level overview
+1. Review with the main README.md file in the project's root for a high level overview of the project
 
 2. Set up your private Discord Server & capturing the webhook in your AWS Secrets Manager by following [these instructions](discord-setup.md)
 
@@ -33,19 +33,8 @@ The following files are currently on hold due to scope creep:
         - [AWS CloudFormation]
         - [Terraform]
 
-4. Add the python file ("files", if using AWS Secrets Manager) to your VM
-    1. Using AWS Secrets Manager (preferred)
-        - Add [attach.py](attach.py)
-        - Add [secret_load.py](secret_load.py)
-    2. NOT using AWS Secrets Manager
-        - Add [without-aws.py](../src/without-aws.py)
-    
-    create a venv, then run [requirements.txt](../src/requirements.txt) to install necessary packages to run the python script:
+4. Follow [modifying-instance.md](modifying-instance.md) to enable the instance to have GUI access 🖥️.
 
-    
-
+5. If successful, you should now have GUI access to your machine 🥳🎉, and now should follow the [mandatory manual instructions](mandatory-manual.md) to add the python file(s) and do the final leg of the setup. Just to reiterate, this part is 'necessary' to by-pass Instagram's restrictions on Selenium.
 
 ~~for the other methods, just include the programmatic version in those files.~~
-
-
-5. Now follow the [mandatory manual instructions](mandatory-manual.md) to by-pass Instagram's restrictions on Selenium.

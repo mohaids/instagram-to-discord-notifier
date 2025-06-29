@@ -64,14 +64,13 @@ source [name]/bin/activate
 ```
 
 #### Add python file(s) + necessary packages:
-Add the file(s):
 
-if you're opting to use secrets manager, install:
-- attach.py
-- secret_load.py
-
-if you're opting to NOT use secrets manager, install:
-- [without-aws.py](../src/without-aws.py)
+Add the python file ("files", if using AWS Secrets Manager) to your VM
+    1. Using AWS Secrets Manager (preferred)
+        - Add [attach.py](attach.py)
+        - Add [secret_load.py](secret_load.py)
+    2. NOT using AWS Secrets Manager
+        - Add [without-aws.py](../src/without-aws.py)
 
 Also add + run [requirements.txt](../src/requirements.txt):
 
