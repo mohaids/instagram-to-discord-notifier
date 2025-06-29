@@ -5,7 +5,7 @@
 ## Documentation Files
 | File | Description |
 |------|-------------|
-|**discord-setup.md** | To demonstrate how to set up a private discord server to get the notifications at|
+|**[discord-setup.md](discord-setup.md)** | To demonstrate how to set up a private discord server to get the notifications at|
 |**aws-console-manager.md** | Shows how to provision the EC2 instance|
 |**modifying-instance.md** | Necessary commands to run on the instance in order for this project to function|
 |**mandatory-manual.md** |Final mandatory manual steps to take in order to set up the environment for Selenium to work|
