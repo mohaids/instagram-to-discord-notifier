@@ -17,7 +17,7 @@ sudo apt install ./google-chrome-stable_current_amd64.deb -y
 ```
 
 <details>
-<summary>Click here for more information on how to resolve the issue where installing chrome is proving troublesome</summary>
+<summary>Click here for more information on how to resolve the issue where installing Chrome is proving troublesome</summary>
 
 Run the following commands:
 ```bash
@@ -31,7 +31,7 @@ Run the command again:
 ```bash
 sudo apt install ./google-chrome-stable_current_amd64.deb -y
 ```
-
+---
 </details>
 
 

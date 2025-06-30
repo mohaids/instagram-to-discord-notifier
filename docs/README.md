@@ -34,9 +34,8 @@ The following files are currently on hold due to scope creep:
         - [Terraform]
 
 4. Follow [modifying-instance.md](modifying-instance.md) to enable the instance to have GUI access 🖥️.
+If successful, you should now have GUI access to your machine 🥳🎉
 
-5. If successful, you should now have GUI access to your machine 🥳🎉
-
-Now should follow the [mandatory manual instructions](mandatory-manual.md) to add the python file(s) and do the final leg of the setup. Just to reiterate, this part is 'necessary' to by-pass Instagram's restrictions on Selenium.
+5. Now should follow the [mandatory manual instructions](mandatory-manual.md) to add the python file(s) and do the final leg of the setup. Just to reiterate, this part is 'necessary' to by-pass Instagram's restrictions on Selenium.
 
 ~~for the other methods, just include the programmatic version in those files.~~
