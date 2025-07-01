@@ -6,6 +6,7 @@
 | File | Description |
 |------|-------------|
 |**[discord-setup.md](discord-setup.md)** | To demonstrate how to set up a private discord server to get the notifications at|
+|**[uploading-to-secrets-manager.md](uploading-to-secrets-manager.md)** | Optional - demonstrate how to upload one's Discord webhook to AWS Secrets Manager|
 |**[aws-console-manager.md](aws-console-manager.md)** | Shows how to provision the EC2 instance|
 |**[modifying-instance.md](modifying-instance.md)** | Necessary commands to run on the instance in order for to allow GUI access|
 |**[mandatory-manual.md](mandatory-manual.md)** |Final mandatory manual steps (while in GUI) to take in order to set up the environment for Selenium to work|
