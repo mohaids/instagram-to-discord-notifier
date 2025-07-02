@@ -101,14 +101,15 @@ The above command should open up a Chrome tab.
 
 5. While cd'd in to the directory of your python files, finally run either:
 
-1. if you opted to use aws secrets manager:
-```bash
-python3 attach.py
-```
+    1. if you opted to use AWS Secrets Manager, follow [creating-iam-user.md](creating-iam-user.md) to first configure your AWS CLI.
 
-**OR**
+    ```bash
+    python3 attach.py
+    ```
 
-2. if you opted to NOT use secrets manager:
-```bash
-python3 without-aws.py
-```
+    **OR**
+
+    2. if you opted to NOT use AWS Secrets Manager:
+    ```bash
+    python3 without-aws.py
+    ```
