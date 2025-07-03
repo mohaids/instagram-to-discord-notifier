@@ -2,6 +2,12 @@
 
 ### Overview
 
+What is an IAM User:
+
+Purpose of creating one:
+
+End goal:
+
 ## Step-by-Step Instructions:
 
 1. Assuming you're at the AWS Management Console, click on / search for "IAM". Here's what it'd look like if you were to click on it:
@@ -66,4 +72,35 @@ Click on the top right, which says "Create access key".
 
 Click "Create access key".
 
-12. 
+12. Finally, on this page, you should be able to see your "Access key" and "Secret Access key".
+
+NOTE: After you leave this page, you CANNOT retrieve your credentials again, so keep this information safe. We'll need to input this information in our terminal.
+
+![last time screen](../resources/edited-iam-user/13access-key-created.png)
+
+---
+### GUI Instructions
+
+Now, switch back to your GUI interface for your VM. We need to configure the AWS CLI.
+
+13. To start, type `aws configure`. If installed correctly, it will prompt you to enter your access key ID, enter the AWS Access Key from the previous screenshot.
+
+![configure pic 1](../resources/edited-iam-user/14GUI-access-key-id.png)
+
+14. Now, you should be prompted to enter your "AWS Secret Access Key". Here you should enter the "Secret access key" that was provided in the screenshot in bullet point 12.
+
+![configure pic 2](../resources/edited-iam-user/15GUI-secret-access-key.png)
+
+Also, just FYI, I did revoke this access key :)
+
+⚠️ Security Tip: Never commit access keys to version control or share them in screenshots. If you do, revoke them immediately (like I did!).
+
+15. Now enter a default region name - choose the AWS region where your resources (like secrets or EC2 instances) are hosted, e.g., `us-east-2`.
+
+![configure pic 3](../resources/edited-iam-user/16GUI-region-name.png)
+
+16. Now, you'll be prompted to enter a default output format. It determines how CLI responses are displayed (e.g., json, table, or text). You can press Enter to skip.
+
+After that, you should have successfully configured your AWS CLI with your IAM User!
+
+![configure pic 4](../resources/edited-iam-user/17GUI-finished-aws-config.png)
