@@ -2,6 +2,14 @@
 
 ### Overview
 
+**What is the AWS Console:**
+The AWS Management Console is a web-based interface that allows you to interact with and configure AWS services. It provides a visual way to launch, manage, and monitor resources like virtual machines, databases, and storage.
+
+**Purpose of this step:**
+In this part of the guide, you'll launch and configure a virtual machine (EC2 instance) through the AWS Console. This instance will serve as the compute environment for your scripts which will monitor your [instagram.com](https://www.instagram.com) DMs page for new DMs.
+
+**End goal:**
+The goal is to successfully launch an Ubuntu-based EC2 instance, configure basic settings (like key pairs and network access), and SSH into it using its public IPv4 address. This will prepare your cloud-based virtual machine for further setup and deployment.
 
 ## Step-by-Step Instructions
 

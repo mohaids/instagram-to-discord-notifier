@@ -12,3 +12,4 @@ For this project, the whole point is to recieve notifications via a personal Dis
 
 ### Webhook in Secrets Manager Instructions:
 
+Follow this documentation for detailed steps: [uploading-to-secrets-manager.md](uploading-to-secrets-manager.md)
