@@ -80,18 +80,4 @@ Click "Continue"
 
 Now it'll prompt you to "Authenticate to VNC Server" - use the password you created from earlier to authenticate.
 
-Now you should successfully have access to your machine via GUI!
-
----
-When in GUI, open terminal, and run the following command to install chrome
-
-before running the script:
-you must ensure that aws cli is installed
-
-visit this link: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-
-the easiest option is snap package since its less hassle.
-
-**note to self**: try to use gpg keys just to see if knowledge is up to date
-
-after installation, make sure to authenticate with an IAM user with only the necessary priviledges, which is essentially just being able to access secrets from the Secrets Manager
+Now you should successfully have access to your machine via GUI! 🚀

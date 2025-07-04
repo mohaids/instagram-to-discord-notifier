@@ -10,6 +10,7 @@
 |**[aws-console-manager.md](aws-console-manager.md)** | Shows how to provision the EC2 instance|
 |**[modifying-instance.md](modifying-instance.md)** | Necessary commands to run on the instance in order for to allow GUI access|
 |**[mandatory-manual.md](mandatory-manual.md)** |Final mandatory manual steps (while in GUI) to take in order to set up the environment for Selenium to work|
+|**[creating-iam-user.md](creating-iam-user.md)** | Optional - shows how to create an IAM User |
 
 The following files are currently on hold due to scope creep:
 

@@ -2,11 +2,11 @@
 
 ### Overview
 
-What is an IAM User:
+**What is an IAM User:** An IAM (Identity and Access Management) User is an entity you create within your AWS account that represents a person or application. Each user has credentials and permissions to access AWS services and resources that you specify.
 
-Purpose of creating one:
+**Purpose of creating one:** Creating an IAM user allows you to securely manage and control access to specific AWS services without using your root account. This particular user will be given permissions to read and write to AWS Secrets Manager so that it can securely interact with secrets from the AWS CLI or programmatically.
 
-End goal:
+**End goal:** The end goal is to set up an IAM user with the necessary permissions and credentials to securely access the Discord Webhook secret stored in Secrets Manager using the AWS CLI. 
 
 ## Step-by-Step Instructions:
 
@@ -82,6 +82,8 @@ NOTE: After you leave this page, you CANNOT retrieve your credentials again, so 
 ### GUI Instructions
 
 Now, switch back to your GUI interface for your VM. We need to configure the AWS CLI.
+
+Install the AWS CLI - visit this link to find out how: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
 13. To start, type `aws configure`. If installed correctly, it will prompt you to enter your access key ID, enter the AWS Access Key from the previous screenshot.
 
