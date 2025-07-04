@@ -2,6 +2,15 @@
 
 ### Overview
 
+**What is AWS Secrets Manager:**
+AWS Secrets Manager is a service that helps you securely store, manage, and retrieve sensitive information—such as API keys, database credentials, and webhooks—without hardcoding them into your applications.
+
+**Purpose of this step:**
+In this project, we’ll use Secrets Manager to store a Discord webhook URL. By uploading the webhook to Secrets Manager, we ensure it’s kept safe and can be programmatically accessed in a secure way, instead of exposing it in your source code.
+
+**End goal:**
+The goal is to store a Discord webhook in AWS Secrets Manager under a clearly named secret. Later, this secret can be retrieved securely using the AWS CLI or programmatically within your scripts to send notifications to a Discord server.
+
 ## Step-by-Step Instructions:
 
 1. First navigate to [https://console.aws.amazon.com/](https://console.aws.amazon.com/) and sign in.
