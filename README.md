@@ -1,4 +1,4 @@
-# aws-selenium-security-automation
+# instagram-to-discord-notifier
 
 
 ## Project Purpose
