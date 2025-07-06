@@ -1,6 +1,6 @@
-# Documentation Guide
+# AWS Documentation Guide
 
-## Purpose: To organize these docs files for better understandability
+## Purpose: To organize these aws docs files for better understandability
 
 ## Documentation Files
 | File | Description |
