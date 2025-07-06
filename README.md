@@ -33,7 +33,7 @@ _Old approach (still included for reference):_ GUI-based Chrome on EC2, accessed
 | v1 (Legacy) | EC2, RealVNC, Secrets Manager | GUI-based bot hosted on EC2, accessed via VNC|
 | v2 (Current) | Docker, Headless Chrome, Discord Webhooks | Containerized, cloud-portable version using headless Chrome and runtime secrets |
 
-See [/docs-aws/README.md](/docs-aws/README.md) for the original GUI-based EC2 setup.
+See [/docs-aws](/docs-aws) for the original GUI-based EC2 setup.
 
 ## Architecture & Security Design
 ![Architecture Diagram](resources/readme-architecture-design.png)
@@ -44,13 +44,22 @@ See [/docs-aws/README.md](/docs-aws/README.md) for the original GUI-based EC2 se
     - for accessing AWS Secrets Manager
 
 ## Technologies Used
-- AWS EC2 (Ubuntu) ~~(or AWS Linux???)~~
-- AWS Secrets Manager
-- AWS Identity and Access Management (IAM)
-- AWS CLI
-- Python (Selenium)
-- RealVNC Viewer
-- Discord (Webhooks)
+- **Python**: Bot logic and automation via Selenium
+- **Selenium + undetected-chromedriver**: Headless, stealthy browser automation
+- **Docker**: Containerized deployment
+- **Discord Webhooks**: Notification delivery
+- **Google Chrome**: Used in headless mode inside container
+
+## Cloud Deployment Tools
+- **AWS ECS (Fargate)**: Serverless container runtime for persistent cloud hosting
+- **Amazon ECR**: For hosting Docker images
+- **AWS Secrets Manager**: Optional secret storage for webhooks or session cookies
+- **AWS CLI**: For provisioning and deployment
+
+### Previously Used Technologies
+- AWS EC2 (Ubuntu)
+- RealVNC Viewer (GUI access to browser)
+- Raspberry Pi 4B (proxy server)
 
 
 ## Setup Instructions
