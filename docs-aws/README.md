@@ -1,4 +1,4 @@
-# AWS Documentation Guide
+# Legacy (AWS) Setup Overview
 
 ## Purpose: To organize these aws docs files for better understandability
 

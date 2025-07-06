@@ -19,7 +19,21 @@ Here's an example of what the customized notifications could look like:
 ![Discord Notification Image](resources/readme-discord-notification.png)
 
 ## Project Overview:
-Run a Selenium script on an Ubuntu EC2 instance which I interact with via GUI thru RealVNC Viewer ~~and which connects to my Raspberry Pi 4B proxy server~~ in order to continuously monitor the Instagram DMs page and call my Discord webhook when I receive a new DM.
+This project runs a stealthy, headless Instagram monitor inside a Docker container that checks for new DMs and notifies a private Discord server via webhook — without relying on mobile notifications or app tracking.
+
+Using a cookie-authenticated, headless Chrome session powered by undetected-chromedriver, the bot detects new messages by monitoring changes in the Instagram inbox tab title. When a DM is received, the container immediately sends a custom Discord alert.
+
+_New approach:_ Fully headless browser automation inside a Docker container, cloud-deployable, cookie-based login
+_Old approach (still included for reference):_ GUI-based Chrome on EC2, accessed via RealVNC, routed through a Raspberry Pi proxy
+
+## Project Evolution:
+| Version | Key Tech Stack | Description |
+|--------|----------------|-------------|
+| v0 (Ancient) | EC2, RealVNC, Secrets Manager, **RaspberryPi** | GUI-based bot hosted on EC2, accessed via VNC **and routed through a home proxy** |
+| v1 (Legacy) | EC2, RealVNC, Secrets Manager | GUI-based bot hosted on EC2, accessed via VNC|
+| v2 (Current) | Docker, Headless Chrome, Discord Webhooks | Containerized, cloud-portable version using headless Chrome and runtime secrets |
+
+See [/docs-aws/README.md](/docs-aws/README.md) for the original GUI-based EC2 setup.
 
 ## Architecture & Security Design
 ![Architecture Diagram](resources/readme-architecture-design.png)
