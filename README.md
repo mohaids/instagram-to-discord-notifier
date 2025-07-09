@@ -64,9 +64,25 @@ See [/docs-aws](/docs-aws) for the original GUI-based EC2 setup.
 
 ## Setup Instructions
 
-1. Manual Provisioning: Follow the [docs/readme.md](docs/README.md) file for detailed instructions.
+This project supports two deployment paths:
 
-Currently, doing this project via IaC tools is on hold due to scope creep.
+### 🐳 Docker (Recommended)
+Run the bot locally or in the cloud using Docker. No EC2 or GUI setup required.
+
+1. Local Hosting:
+- Follow [build-image.md](./docs-docker/build-image.md) to build your Docker image.
+- Then follow [run-locally.md](./docs-docker/run-locally.md) to run an instance of that image (i.e. a container) locally.
+
+2. AWS-Hosting:
+- Follow [build-image.md](./docs-docker/build-image.md) to build your Docker image.
+- Then follow [deploy-to-ecs.md](./docs-docker/deploy-to-ecs.md) to deploy the container on AWS (using ECS and ECR). 
+
+For a full overview of all Docker-related files, see [docs-docker/readme.md](./docs-docker/).
+
+### ☁️ AWS EC2 (Legacy / GUI-based)
+1. Manual Provisioning: Follow the [docs-aws/readme.md](./docs-aws/) file for detailed instructions.
+
+2. Currently, doing this project via IaC tools is on hold due to scope creep.
 
 
 ## Future Security Enhancements
