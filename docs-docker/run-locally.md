@@ -35,3 +35,11 @@ docker rm <container_id_or_name>
 ```bash
 docker stop <container_id_or_name>
 ```
+
+**To restart a stopped container:**
+```bash
+docker start -ai <container_id_or_name>
+```
+
+Flag meaning:
+`-ai`: to re-enable interactive mode (for terminals) just like how `-it` was.
