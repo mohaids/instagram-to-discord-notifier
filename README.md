@@ -35,7 +35,9 @@ _Old approach (still included for reference):_ GUI-based Chrome on EC2, accessed
 
 See [/docs-aws](/docs-aws) for the original GUI-based EC2 setup.
 
-## Architecture & Security Design
+## NEW Architecture (Docker&ECS-based)
+
+## Old Architecture & Security Design (EC2-instace based)
 ![Architecture Diagram](resources/readme-architecture-design.png)
 
 ### Security Considerations:
