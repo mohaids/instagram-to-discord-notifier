@@ -38,7 +38,7 @@ See [/docs-aws](/docs-aws) for the original GUI-based EC2 setup.
 ## Current Architecture (v2)
 Creation in-progress, thank you for waiting.
 ## Middle Architecture (v1)
-![Architecture Diagram](/resources/readme-aws-v1.png)
+![Architecture Diagram](/resources/readme-aws-v1-v2.png)
 ## Old Architecture & Security Design (v0)
 ![Architecture Diagram](resources/readme-architecture-design.png)
 
